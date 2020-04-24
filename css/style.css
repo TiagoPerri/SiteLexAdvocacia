@@ -1,6 +1,28 @@
+.info{
+    width: 100%;
+    background-color: #64649B;
+    min-height: 40px;
+    font-family: 'Cinzel', Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.container-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.container-info a{
+    color: black;
+    font-weight: bold;
+}
+
 .header{
     width: 100%;
-    min-height: 150px;
+    min-height: 120px;
     background-color: black;
 }
 
@@ -8,18 +30,20 @@
     max-width: 80%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 46px 0;
+    padding: 38px 0;
 }
 
 .nav-header ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-header ul li{
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding: 15px;
+    padding: 10px 15px;
 
     transition: all 0.2s linear;
 }
@@ -45,6 +69,7 @@
     max-width: 80%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -90,6 +115,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -148,6 +174,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -170,6 +197,7 @@
     padding: 75px 0;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -182,6 +210,50 @@
 .container-frases p{
     font-size: 1.10em;
     align-self: flex-end;
+}
+
+.sobre-dr{
+    width: 100%;
+    min-height: 600px;
+    background-color: black;
+}
+
+.container-sobre-dr{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.container-sobre-dr h2{
+    color: white;
+    font-size: 1.6em;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 50px 0 15px;
+}
+
+.bio{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.bio img{
+    max-width: 230px;
+    max-height: 295px;
+}
+
+.bio p{
+    width: 60%;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 .maps iframe{
@@ -223,9 +295,9 @@
 
 .content-footer{
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .content-footer address{
@@ -233,9 +305,15 @@
     text-align: center;
 }
 
+.content-footer p{
+    color: #64649B;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
 .content-footer a{
     color: white;
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .icon-footer{
@@ -257,4 +335,91 @@
 
 .container-subfooter p{
     padding: 10px 0 5px 0;
+}
+
+@media screen and (max-width: 1024px){
+    .btn-black{
+        width: 20%;
+    }
+
+    .btn-white{
+        width: 20%;
+    }
+
+    .container-frases{
+        max-width: 70%;
+    }
+
+    .container-frases q{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .info{
+        display: none;
+    }
+
+    .banner-inicial{
+        min-height: 650px;
+    }
+
+    .content-banner{
+        text-align: center;
+    }
+
+    .content-banner h1{
+        font-size: 3.3em;
+        padding-top: 215px;
+    }
+
+    .content-banner h2{
+        font-size: 1.6em;
+    }
+
+    .content-introduçao h2{
+        font-size: 1.5em;
+        padding: 70px 0;
+    }
+
+    .btn-white{
+        width: 30%;
+    }
+
+    .container-frases p{
+        align-self: center;
+    }
+
+    .container-sobre-dr h2{
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .bio p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .container-footer{
+        justify-content: center;
+    }
+
+    .nav-footer{
+        text-align: center;
+    }
+
+    .content-footer{
+        padding: 40px 0;
+    }
+    
+}
+
+@media screen and (max-width: 375px){
+    
+}
+
+@media screen and (max-width: 320px){
+    
 }
