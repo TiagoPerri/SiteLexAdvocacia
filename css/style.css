@@ -401,6 +401,15 @@
 }
 
 @media screen and (max-width: 425px){
+    .nav-header{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-header ul li{
+        width: 100%;
+        display: block;
+    }
 
     .container-footer{
         justify-content: center;
@@ -422,4 +431,21 @@
 
 @media screen and (max-width: 320px){
     
+}
+
+.header__btnMenu{
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    color: white;
+}
+
+.js .nav-header{
+    transition: max-height 1s linear;
+}
+
+@media screen and (min-width: 426px){
+    .header__btnMenu{
+        display: none;
+    }
 }
