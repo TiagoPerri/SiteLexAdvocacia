@@ -6,6 +6,6 @@
     var menu = new Menu({
         container: '.nav-header',
         toggleBtn: '.header__btnMenu',
-        widthEnabled: 426
+        widthEnabled: 769
     })
 })()

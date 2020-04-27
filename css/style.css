@@ -35,13 +35,23 @@
     padding: 38px 0;
 }
 
+.container-header p{
+    font-family: 'Cinzel Decorative', 'Cinzel', Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    align-self: center;
+    font-size: 2.2em;
+}
+
 .nav-header ul{
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
 }
 
 .nav-header ul li{
     text-transform: uppercase;
+    font-family: 'Cinzel', Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
     letter-spacing: 3px;
     padding: 10px 15px;
 
@@ -215,7 +225,7 @@
 
 .sobre-dr{
     width: 100%;
-    min-height: 600px;
+    min-height: 650px;
     background-color: black;
 }
 
@@ -241,12 +251,15 @@
 .bio{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 50px;
 }
 
 .bio img{
+    border-bottom: 5px solid white;
     max-width: 230px;
-    max-height: 295px;
+    max-height: 395px;
+    padding: 15px 0;
 }
 
 .bio p{
@@ -255,6 +268,11 @@
     text-align: center;
     font-size: 1.2em;
     line-height: 1.5;
+}
+
+.bio .fa-balance-scale{
+    font-size: 1.5em;
+    padding: 25px 0;
 }
 
 .maps iframe{
@@ -357,6 +375,26 @@
 }
 
 @media screen and (max-width: 768px){
+      /*MENU HAMBURGUER*/
+      .nav-header{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-header ul li{
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-bottom: 2px solid white;
+        padding: 20px 0;
+    }
+
+    .nav-header ul li:first-child{
+        border-top: 2px solid white;
+        margin-top: 15px;
+    }
+    /*--------------------------*/
+
     .info{
         display: none;
     }
@@ -414,26 +452,9 @@
 }
 
 @media screen and (max-width: 425px){
-
-    /*MENU HAMBURGUER*/
-    .nav-header{
-        display: block;
-        width: 100%;
+    .container-header p{
+        font-size: 1.9em;
     }
-
-    .nav-header ul li{
-        width: 100%;
-        display: block;
-        text-align: center;
-        border-bottom: 2px solid white;
-        padding: 20px 0;
-    }
-
-    .nav-header ul li:first-child{
-        border-top: 2px solid white;
-        margin-top: 15px;
-    }
-    /*--------------------------*/
 
     .banner-inicial{
         min-height: 550px;
@@ -487,6 +508,10 @@
 }
 
 @media screen and (max-width: 375px){
+    .container-header p{
+        font-size: 1.5em;
+    }
+
     .content-contact h2{
         margin-top: 30px;
     }
@@ -531,7 +556,7 @@
     transition: max-height 1s linear;
 }
 
-@media screen and (min-width: 426px){
+@media screen and (min-width: 769px){
     .header__btnMenu{
         display: none;
     }
