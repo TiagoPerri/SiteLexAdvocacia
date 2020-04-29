@@ -323,6 +323,58 @@
     margin: auto;
 }
 
+.fundador{
+    width: 100%;
+    background-color: aqua;
+    min-height: 650px;
+}
+
+.container-sobre-fundador{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-sobre-fundador h2{
+    color: black;
+    font-size: 1.6em;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 30px 0;
+    font-weight: bold;
+    display: inline-block;
+    margin: 50px 0 15px;
+    text-align: center;
+}
+
+.bio-fundador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio-fundador img{
+    width: 230px;
+    max-height: 395px;
+    border-radius: 100%;
+    padding-top: 25px;
+}
+
+.bio-fundador p{
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 50px;
+    width: 60%;
+    margin: auto;
+}
+
+.bio-fundador .fa-balance-scale{
+    font-size: 1.5em;
+    padding: 25px 0;
+}
+
 .maps iframe{
     width: 100%;
 }
