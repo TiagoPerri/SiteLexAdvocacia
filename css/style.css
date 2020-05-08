@@ -24,7 +24,6 @@
 
 .container-info a:hover{
     color: white;
-    border-bottom: 1px solid white;
 }
 
 .header{
@@ -158,6 +157,14 @@
 .content-contact address{
     margin: 10px 0 0 0;
     font-size: 1.2em;
+}
+
+.content-contact a{
+    transition: all .2s linear;
+}
+
+.content-contact a:hover{
+    color: #64649B;
 }
 
 .icon{
@@ -462,7 +469,6 @@
 }
 
 footer a:hover{
-    border-bottom: 1px solid #64649B;
     color: #64649B;
     padding-bottom: 3px;
 }
@@ -485,7 +491,6 @@ footer a:hover{
 
 .container-subfooter a:hover{
     color: white;
-    border-bottom: 1px solid white;
 }
 
 @media screen and (max-width: 1024px){

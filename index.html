@@ -20,13 +20,15 @@
 
 		<meta name="keywords" content="lex,advogado,advocacia, lex advocacia, Dr. João Gonçalves de Oliveira, Dr. João Gonçalves de Oliveira Jr., Tiago-Perri, criminal, penal, vara da família, Cornélio, Procópio, Cornélio Procópio, Advogados cornélio procópio, site advogado, site advocacia, advogados paraná, oab paraná"> 
 
-		<!--Carousel-->
+		<!--Carousel and AOS-->
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-
         <link rel="stylesheet" href="js/slick/slick.css">
-        <link rel="stylesheet" href="js/slick/slick-theme.css">
+		<link rel="stylesheet" href="js/slick/slick-theme.css">
+		
+		<link rel="stylesheet" href="js/aos/aos.css">
+        <script src="js/aos/aos.js"></script>
 
 		<!--Links-->
 		<link rel="stylesheet" href="css/reset.css">
@@ -53,7 +55,7 @@
 		</div>
 
 		<header class="header">
-			<div class="container-header">
+			<div class="container-header"">
 				<p>LexAdv <i class="fas fa-balance-scale"></i></p>
 
 				<button class="header__btnMenu" style="display: none;"> <i class="fas fa-bars fa-2x"></i> <span class="sr-only">Menu</span></button>
@@ -79,7 +81,7 @@
 		</section>
 
 		<article class="contact" id="contato">
-			<div class="content-contact">
+			<div class="content-contact" data-aos="fade-down" data-aos-duration="1000">
 				<h2>Dados de contato</h2>
 
 				<address>
@@ -119,16 +121,16 @@
 		</div>
 		
 		<article class="introduçao-Lex">
-			<div class="content-introduçao">
+			<div class="content-introduçao" data-aos="fade-down" data-aos-duration="1000">
 				<h2>Há 52 anos prestando serviço com excelência nas regiões sul e sudeste do Brasil!</h2>
 				<a href="#SobreLex" class="btn-black">Saiba mais</a>
 			</div>
 		</article>
 		
 		<section id="DrJunior" class="sobre-dr">
-			<div class="container-sobre-dr">
+			<div class="container-sobre-dr" data-aos="fade-down" data-aos-duration="1000">
 				<h2>Dr. João Gonçalves de Oliveira Júnior</h2>
-				<div class="bio">
+				<div class="bio" data-aos="fade-down" data-aos-duration="1200">
 					<img src="img/DrJunior.jpg" alt="Dr. João Gonçalves de Oliveira Junior, Advogado que gerencia a Lex Advocacia.">
 
 					<p><i class="fas fa-balance-scale"></i><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br><i class="fas fa-balance-scale"></i></p>
@@ -137,9 +139,9 @@
 		</section>
 
 		<section id="SobreLex" class="sobre-lex">
-			<div class="container-sobre-lex">
+			<div class="container-sobre-lex" data-aos="fade-down" data-aos-duration="1000">
 				<h2>Lex Advocacia</h2>
-				<div class="bio">
+				<div class="bio" data-aos="fade-down" data-aos-duration="1200">
 					<img src="img/desktop.jpg" alt="Foto do escritório onde atua o Dr. João Gonçalves de Oliveira Junior">
 					<div class="container-bio-p">
 						<p><i class="fas fa-balance-scale"></i><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br><i class="fas fa-balance-scale"></i></p>
@@ -149,9 +151,9 @@
 		</section>
 
 		<section class="fundador">
-			<div class="container-sobre-fundador">
+			<div class="container-sobre-fundador" data-aos="fade-down" data-aos-duration="1000">
 				<h2>Fundador</h2>
-				<div class="bio-fundador">
+				<div class="bio-fundador" data-aos="fade-down" data-aos-duration="1000">
 					<img src="img/DrJunior.jpg" alt="">
 					<div class="container-bio-fundador">
 						<p><i class="fas fa-balance-scale"></i><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br><i class="fas fa-balance-scale"></i></p>
@@ -200,5 +202,8 @@
 		<script src="js/main.js"></script>
 		<script src="js/carousel.js"></script>
 		<script src="js/scroll.js"></script>
+		<script>
+            AOS.init();
+        </script>
 	</body>
 </html>
