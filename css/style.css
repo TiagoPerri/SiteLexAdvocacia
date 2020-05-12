@@ -300,8 +300,7 @@
     line-height: 1.5;
 }
 
-.bio .fa-balance-scale{
-    font-size: 1.5em;
+.bio .fa-balance-scale, .bio-fundador .fa-balance-scale{
     padding: 25px 0;
 }
 
@@ -356,8 +355,10 @@
 
 .fundador{
     width: 100%;
-    background-color: black;
-    min-height: 650px;
+    background-image: url(../Img/back-fundador.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    min-height: 680px;
 }
 
 .container-sobre-fundador{
@@ -382,29 +383,24 @@
 
 .bio-fundador{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .bio-fundador img{
     width: 230px;
-    max-height: 395px;
-    border-radius: 100%;
-    padding-top: 25px;
+    max-height: 315px;
+    box-shadow: -9px 9px rgba(255,255,255,.5);
 }
 
-.bio-fundador p{
-    text-align: center;
-    line-height: 1.5;
-    margin-top: 50px;
+.text-fundador{
     width: 60%;
     color: white;
-    margin: auto;
-}
-
-.bio-fundador .fa-balance-scale{
-    font-size: 1.5em;
-    padding: 25px 0;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1.2em;
 }
 
 .maps iframe{
@@ -519,6 +515,10 @@ footer a:hover{
     .container-frases q{
         text-align: center;
     }
+
+    .container-bio-p{
+        margin: 0 0 40px 0;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -580,6 +580,10 @@ footer a:hover{
         align-self: center;
     }
 
+    .sobre-dr{
+        background-position: center left;
+    }
+
     .container-sobre-dr h2{
         text-align: center;
         font-size: 1.3em;
@@ -594,7 +598,17 @@ footer a:hover{
     .bio p{
         width: 100%;
         margin-top: 20px;
-        font-size: 1em;
+        font-size: 1.25em;
+    }
+
+    .bio-fundador{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-fundador{
+        width: 100%;
+        margin: 30px 0;
     }
 
     .container-footer{
