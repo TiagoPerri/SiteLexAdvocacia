@@ -1,3 +1,6 @@
+/*--------------------------------
+        INFO-HEADER
+--------------------------------*/
 .info{
     width: 100%;
     background-color: #64649B;
@@ -25,6 +28,10 @@
 .container-info a:hover{
     color: white;
 }
+
+/*--------------------------------
+        HEADER
+--------------------------------*/
 
 .header{
     width: 100%;
@@ -63,13 +70,18 @@
     text-transform: uppercase;
     font-family: 'Cinzel', Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 3px;
-    padding: 10px 15px;
+    padding: 10px 19px;
   }
 
   .nav-header ul li a:hover{  
     border-top: 1.3px solid white;
     border-bottom: 1.3px solid white;
 }
+
+
+/*--------------------------------
+        SECTION BANNER INICIAL
+--------------------------------*/
 
 .banner-inicial{
     width: 100%;
@@ -100,6 +112,10 @@
     margin-bottom: 75px;
 }
 
+/*--------------------------------
+        BOTÕES
+--------------------------------*/
+
 .btn-black{
     border: 5px solid black;
     background-color: rgba(0,0,0,.9);
@@ -124,6 +140,36 @@
     position: relative;
     top: 5px;
 }
+
+.btn-white{
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: color .2s linear;
+    display: block;
+    padding: 10px 0;
+    width: 17%;
+    margin-top: 20px;
+
+    box-shadow: 0px 7px white;
+}
+
+.btn-white:hover{
+    border-color: #64649B;
+    color: #64649B;
+    box-shadow: 0px 7px #64649B;
+}
+
+.btn-white:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+/*--------------------------------
+        SECTION CONTACT
+--------------------------------*/
 
 .contact{
     background-color: black;
@@ -176,31 +222,9 @@
     margin-right: 5px;
 }
 
-.btn-white{
-    border: 2px solid white;
-    background-color: transparent;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    transition: color .2s linear;
-    display: block;
-    padding: 10px 0;
-    width: 17%;
-    margin-top: 20px;
-
-    box-shadow: 0px 7px white;
-}
-
-.btn-white:hover{
-    border-color: #64649B;
-    color: #64649B;
-    box-shadow: 0px 7px #64649B;
-}
-
-.btn-white:active{
-    box-shadow: none;
-    position: relative;
-    top: 5px;
-}
+/*--------------------------------
+        SECTION INTRODUÇAO LEX
+--------------------------------*/
 
 .introduçao-Lex{
     width: 100%;
@@ -224,6 +248,9 @@
     padding: 90px 0 70px 0;
 }
 
+/*--------------------------------
+        SECTION FRASES
+--------------------------------*/
 .frases{
     width: 100%;
     min-height: 175px;
@@ -250,6 +277,10 @@
     font-size: 1.10em;
     align-self: flex-end;
 }
+
+/*--------------------------------
+        SECTION DR. JUNIOR
+--------------------------------*/
 
 .sobre-dr{
     width: 100%;
@@ -304,14 +335,19 @@
     padding: 25px 0;
 }
 
+/*--------------------------------
+        SECTION LEX
+--------------------------------*/
+
 .sobre-lex{
     width: 100%;
-    min-height: 1000px;
-    background-image: url(../Img/FundoLivros.jpg);
+    min-height: 690px;
+    background-image: url(../Img/back-lex.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
     background-size: cover;
 }
 
-.container-sobre-lex{
+.container-h2{
     max-width: 80%;
     margin: auto;
     display: flex;
@@ -319,39 +355,43 @@
     align-items: center;
 }
 
-.container-sobre-lex h2{
-    color: black;
+.container-h2 h2{
+    color: white;
     font-size: 1.6em;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
     padding: 30px 0;
     font-weight: bold;
     display: inline-block;
     margin: 50px 0 15px;
 }
 
-.container-sobre-lex .bio{
-    flex-flow: column wrap;
-    padding-top: 20px;
-    align-items: center;
+.content-sobre-lex{
+    max-width: 80%;
+    margin-top: 20px;
 }
 
-.container-sobre-lex .bio img{
-    border: none;
-    margin: 0;
-    width: 100%;
-    padding:0;
+.text-lex{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 80px 100px;
 }
 
-.container-bio-p{
-    width: 100%;
-    background-color: rgba(0,0,0,.9);
-}
-
-.container-sobre-lex .bio p{
-    margin: auto;
+.text-lex p{
+    font-family: 'Cinzel', Georgia, 'Times New Roman', Times, serif;
     color: white;
+    line-height: 1.9;
+    font-size: 1.3em;
+    text-align: left;
 }
+
+.btn-lex{
+    width: 20%;
+    margin: 20px auto;
+}
+
+/*--------------------------------
+        SECTION FUNDADOR
+--------------------------------*/
 
 .fundador{
     width: 100%;
@@ -402,6 +442,10 @@
     line-height: 1.7;
     font-size: 1.2em;
 }
+
+/*--------------------------------
+        FOOTER AND MAP
+--------------------------------*/
 
 .maps iframe{
     width: 100%;
@@ -499,6 +543,10 @@ footer a:hover{
     color: white;
 }
 
+/*--------------------------------
+        RESPONSIVIDADE
+--------------------------------*/
+
 @media screen and (max-width: 1024px){
     .btn-black{
         width: 20%;
@@ -514,10 +562,6 @@ footer a:hover{
 
     .container-frases q{
         text-align: center;
-    }
-
-    .container-bio-p{
-        margin: 0 0 40px 0;
     }
 }
 
