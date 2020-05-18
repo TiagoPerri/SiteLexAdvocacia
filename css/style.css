@@ -5,7 +5,7 @@
     width: 100%;
     background-color: #64649B;
     min-height: 40px;
-    font-family: 'Cinzel', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Bellota Text', Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
@@ -121,7 +121,7 @@
     background-color: rgba(0,0,0,.9);
     color: #64649B;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Bellota Text', Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     transition: all .2s linear;
     display: block;
@@ -144,7 +144,7 @@
 .btn-white{
     border: 2px solid white;
     background-color: transparent;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Bellota Text', Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     transition: color .2s linear;
     display: block;
@@ -229,23 +229,20 @@
 .introduçao-Lex{
     width: 100%;
     background-image: url(../Img/FundoLivros.jpg);
-    min-height: 350px;
+    min-height: 180px;
 }
 
 .content-introduçao{
     max-width: 80%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 .content-introduçao h2{
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
-    padding: 90px 0 70px 0;
+    padding: 90px 0;
+    margin: auto;
 }
 
 /*--------------------------------
@@ -271,6 +268,7 @@
     text-align: center;
     font-size: 1.70em;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .container-frases p{
@@ -328,7 +326,8 @@
     color: black;
     text-align: center;
     font-size: 1.2em;
-    line-height: 1.5;
+    line-height: 1.7;
+    font-weight: bold
 }
 
 .bio .fa-balance-scale, .bio-fundador .fa-balance-scale{
@@ -345,6 +344,10 @@
     background-image: url(../Img/back-lex.jpg);
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
     background-size: cover;
+}
+.container-sobre-lex{
+    display: flex;
+    flex-direction: column;
 }
 
 .container-h2{
@@ -377,7 +380,7 @@
 }
 
 .text-lex p{
-    font-family: 'Cinzel', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Bellota Text', Georgia, 'Times New Roman', Times, serif;
     color: white;
     line-height: 1.9;
     font-size: 1.3em;
@@ -385,8 +388,27 @@
 }
 
 .btn-lex{
-    width: 20%;
-    margin: 20px auto;
+    width: 15%;
+    margin: 40px auto;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-self: center;
+
+    transition: all .2s linear;
+}
+
+.btn-lex:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-color: white;
+    box-shadow: 0px 7px white;
+}
+
+
+.btn-lex:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
 }
 
 /*--------------------------------
@@ -398,7 +420,7 @@
     background-image: url(../Img/back-fundador.jpg);
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
     background-size: cover;
-    min-height: 680px;
+    min-height: 750px;
 }
 
 .container-sobre-fundador{
@@ -454,8 +476,8 @@
 .footer{
     width: 100%;
     background-color: black;
-    min-height: 250px;
-    font-family: 'Cinzel', Georgia, 'Times New Roman', Times, serif;
+    min-height: 275px;
+    font-family: 'Bellota Text', Georgia, 'Times New Roman', Times, serif;
 }
 
 .container-footer{
@@ -474,6 +496,7 @@
     margin-bottom: 10px;
     font-weight: bold;
     color: #64649B;
+    font-family: 'Cinzel', Georgia, 'Times New Roman', Times, serif;
 }
 
 .nav-footer li{
@@ -500,6 +523,7 @@
     color: #64649B;
     margin-bottom: 8px;
     font-weight: bold;
+    font-family: 'Cinzel', Georgia, 'Times New Roman', Times, serif;
 }
 
 .content-footer a{
@@ -554,6 +578,10 @@ footer a:hover{
 
     .btn-white{
         width: 20%;
+    }
+
+    .sobre-lex{
+        min-height: 750px;
     }
 
     .container-frases{
@@ -645,6 +673,10 @@ footer a:hover{
         font-size: 1.25em;
     }
 
+    .sobre-lex{
+        min-height: 750px;
+    }
+
     .bio-fundador{
         flex-direction: column;
         align-items: center;
@@ -711,6 +743,14 @@ footer a:hover{
     .sobre-dr h2{
         font-size: 1.2em;
     }
+
+    .content-sobre-lex{
+        max-width: 100%;
+    }
+
+    .text-lex{
+        padding: 20px 40px;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -728,6 +768,10 @@ footer a:hover{
 
     .content-introduçao h2{
         padding: 40px 0 30px;
+    }
+
+    .text-lex{
+        padding: 10px 20px;
     }
 }
 
